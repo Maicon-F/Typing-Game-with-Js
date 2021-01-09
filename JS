@@ -1,0 +1,27 @@
+// randomWordGenerator {
+  // this displays a random word out of our database
+  var wordLibrary= ['Mango',"Strawberry", "Avocado"]; // I know this list ain't great thing but I'll work on it later on!
+
+  var chosenWord = wordLibrary[Math.round((Math.random()*2) )];
+  document.getElementById('randomWord').innerHTML= chosenWord;
+  
+  
+
+//This compares what I've typed with what I should've typed
+
+ function myTyping(field) {
+ // this is the input field text content
+  var name = field.value;  
+  
+   // get the output div
+  var output = document.querySelector('#result');
+   
+  
+  if(chosenWord == name) {
+    output.innerHTML = "Perfect!"
+    } else if (chosenWord !== name) {
+    output.innerHTML = "Wrong!";
+    } 
+      
+
+ }
