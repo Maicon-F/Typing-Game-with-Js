@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Typing Game </title>
+</head>
+<body>
+  
+  <h1>Simple Typing Game Using The 'input' Event</h1>
+  
+  <p>Type this:
+  <span id="randomWord"></span></p>
+  
+<label>
+  <p></p>
+  <span id="typedWord">My typing result is: </span>
+  <input type="text" 
+         name="nom" 
+         maxlength="32" 
+         required
+         oninput = "myTyping(this)">
+</label>
+  <p>
+  <span id="result"></span>
+</p>  
+</body>
+</html>
